@@ -22,7 +22,7 @@ public class Player extends Entity {
 		y+=velY;
 		
 		if(x<-0) x = 0;
-		//if(y<-0) y = 0;
+		//Pra nao permitir to cross the borders
 		if(x+width>=1000) x = 1000-width; //Width*Scale
 		if(y+height>=680) y = 680-height; //Width/(14*10*Scale) = 714,2857142857
 		//Pra cada tile no tile de handler...
